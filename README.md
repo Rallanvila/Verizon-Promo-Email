@@ -1,52 +1,33 @@
-# Foundation for Emails Template
+# League of Legends HTML Promo Email
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-emails-template/dev-status.svg)](https://david-dm.org/zurb/foundation-emails-template#info=devDependencies)
+## Project Context
 
-**Please open all issues with this template on the main [Foundation for Emails](http://github.com/zurb/foundation-emails/issues) repo.**
+Context: This is a fully customizable HTML Newsletter Email / Template written from scratch. I've setup data entry points that allow anybody to only change the image files and descriptions. This way, the same template can be used and rotated in an HTML email marketing campaign.
 
-This is the official starter project for [Foundation for Emails](http://foundation.zurb.com/emails), a framework for creating responsive HTML devices that work in any email client. It has a Gulp-powered build system with these features:
+The styling has been written with Sass. The Sass is then compiled and the images are minified for optimal performance into a master HTML file. The master index.html has everything compiled to inline HTML in order to work in all email clients. 😎
 
-- Handlebars HTML templates with [Panini](http://github.com/zurb/panini)
-- Simplified HTML email syntax with [Inky](http://github.com/zurb/inky)
-- Sass compilation
-- Image compression
-- Built-in BrowserSync server
-- Full email inlining process
+## What was learned
 
-## Installation
+- Pixel Perfect Design Replication
+- How to set variables and @mixins for brand consistent code
+- How to set a JS data file to easily change data for email campaigns
+- Create proper table layouts for image and summary sections
+- Writing reusable code for minimal editing when changing content
 
-To use this template, your computer needs [Node.js](https://nodejs.org/en/) 0.12 or greater. The template can be installed with the Foundation CLI, or downloaded and set up manually.
+## Technologies
 
-### Using the CLI
+Project is created with:
 
-Install the Foundation CLI with this command:
+- HTML
+- CSS
+- SASS
+- Javascript
+- Gulp
+- Json
 
-```bash
-npm install foundation-cli --global
-```
+## See the email below!
 
-Use this command to set up a blank Foundation for Emails project:
-
-```bash
-foundation new --framework emails
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-emails-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
-```
+[Link to HTML Newsletter Email](https://github.com/Rallanvila/League-of-Legends-Email)
 
 ## Build Commands
 
@@ -54,11 +35,11 @@ Run `npm start` to kick off the build process. A new browser tab will open with 
 
 Run `npm run build` to inline your CSS into your HTML along with the rest of the build process.
 
-Run `npm run litmus` to build as above, then submit to litmus for testing. *AWS S3 Account details required (config.json)*
+Run `npm run litmus` to build as above, then submit to litmus for testing. _AWS S3 Account details required (config.json)_
 
-Run `npm run mail` to build as above, then send to specified email address for testing. *SMTP server details required (config.json)*
+Run `npm run mail` to build as above, then send to specified email address for testing. _SMTP server details required (config.json)_
 
-Run `npm run zip` to build as above, then zip HTML and images for easy deployment to email marketing services. 
+Run `npm run zip` to build as above, then zip HTML and images for easy deployment to email marketing services.
 
 ### Speeding Up Your Build
 
@@ -73,21 +54,34 @@ Testing in Litmus requires the images to be hosted publicly. The provided gulp t
 
 ```json
 {
-  "aws": {
-    "region": "us-east-1",
-    "accessKeyId": "YOUR_ACCOUNT_KEY",
-    "secretAccessKey": "YOUR_ACCOUNT_SECRET",
-    "params": {
-        "Bucket": "elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-    },
-    "url": "https://s3.amazonaws.com/elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-  },
-  "litmus": {
-    "username": "YOUR_LITMUS@EMAIL.com",
-    "password": "YOUR_ACCOUNT_PASSWORD",
-    "url": "https://YOUR_ACCOUNT.litmus.com",
-    "applications": ["ol2003","ol2007","ol2010","ol2011","ol2013","chromegmailnew","chromeyahoo","appmail9","iphone5s","ipad","android4","androidgmailapp"]
-  }
+	"aws": {
+		"region": "us-east-1",
+		"accessKeyId": "YOUR_ACCOUNT_KEY",
+		"secretAccessKey": "YOUR_ACCOUNT_SECRET",
+		"params": {
+			"Bucket": "elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
+		},
+		"url": "https://s3.amazonaws.com/elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
+	},
+	"litmus": {
+		"username": "YOUR_LITMUS@EMAIL.com",
+		"password": "YOUR_ACCOUNT_PASSWORD",
+		"url": "https://YOUR_ACCOUNT.litmus.com",
+		"applications": [
+			"ol2003",
+			"ol2007",
+			"ol2010",
+			"ol2011",
+			"ol2013",
+			"chromegmailnew",
+			"chromeyahoo",
+			"appmail9",
+			"iphone5s",
+			"ipad",
+			"android4",
+			"androidgmailapp"
+		]
+	}
 }
 ```
 
@@ -97,34 +91,31 @@ Similar to the Litmus tests, you can have the emails sent to a specified email a
 
 ```json
 {
-  "aws": {
-    "region": "us-east-1",
-    "accessKeyId": "YOUR_ACCOUNT_KEY",
-    "secretAccessKey": "YOUR_ACCOUNT_SECRET",
-    "params": {
-        "Bucket": "elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-    },
-    "url": "https://s3.amazonaws.com/elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
-  },
-  "mail": {
-    "to": [
-      "example@domain.com"
-    ],
-    "from": "Company name <info@company.com",
-    "smtp": {
-      "auth": {
-        "user": "example@domain.com",
-        "pass": "12345678"
-      },
-      "host": "smtp.domain.com",
-      "secureConnection": true,
-      "port": 465
-    }
-  }
+	"aws": {
+		"region": "us-east-1",
+		"accessKeyId": "YOUR_ACCOUNT_KEY",
+		"secretAccessKey": "YOUR_ACCOUNT_SECRET",
+		"params": {
+			"Bucket": "elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
+		},
+		"url": "https://s3.amazonaws.com/elasticbeanstalk-us-east-1-THIS_IS_JUST_AN_EXAMPLE"
+	},
+	"mail": {
+		"to": ["example@domain.com"],
+		"from": "Company name <info@company.com",
+		"smtp": {
+			"auth": {
+				"user": "example@domain.com",
+				"pass": "12345678"
+			},
+			"host": "smtp.domain.com",
+			"secureConnection": true,
+			"port": 465
+		}
+	}
 }
 ```
 
 For a full list of Litmus' supported test clients(applications) see their [client list](https://litmus.com/emails/clients.xml).
 
 **Caution:** AWS Service Fees will result, however, are usually very low do to minimal traffic. Use at your own discretion.
-
