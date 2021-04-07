@@ -1,4 +1,4 @@
-# League of Legends HTML Promo Email
+# Verizon HTML Promo Email
 
 ## Project Context
 
@@ -27,7 +27,7 @@ Project is created with:
 
 ## See the email below!
 
-[Link to HTML Newsletter Email](https://github.com/Rallanvila/League-of-Legends-Email)
+[Link to HTML Newsletter Email](https://github.com/Rallanvila/Verizon-Promo-Email)
 
 ## Build Commands
 

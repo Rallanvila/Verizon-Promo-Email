@@ -7,113 +7,32 @@ html,
 body {
 	padding-bottom: 300px;
 }
-//HEADER==============
-.header-img {
-	& > tbody > tr > th {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-	}
-}
-//INDEX.HTML===========
-.play-now-link {
-	& > tbody > tr > th {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-		padding-bottom: 0 !important;
-	}
-}
-.section-1 {
-	& > tbody > tr > th {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-	}
-	.section-1__description {
-		padding: 10px 40px 20px 50px;
-		font-size: 18px;
-	}
-}
-.section-2 {
-	& > tbody > tr > th {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-	}
-	.section-2__description {
-		padding: 10px 40px 20px 50px;
-		font-size: 18px;
-		background-color: #ffa523;
-		background: #ffa523;
-		margin-bottom: 0;
-	}
-}
-.section-3 {
-	& > tbody > tr > th {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-	}
-	.section-3__description {
-		padding: 10px 40px 20px 50px;
-		font-size: 18px;
-		margin-bottom: 0;
-	}
-}
-//FOOTER=============
-.footer__top {
-	background: #131f37;
-	background-color: #131f37;
-	& > tbody > tr > th {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-	}
-	a {
-		text-align: center;
-	}
+.header__smallp {
+	background: #f6f6f6;
+	background-color: #f6f6f6;
 	p {
-		font-size: 12px;
-		text-align: center;
-		padding-bottom: 20px;
+		color: #747676;
+		text-align: right;
+		font-size: 11px;
+		padding-bottom: 5px;
+		padding-top: 5px;
 		margin-bottom: 0;
-		color: #ffffff;
-		background: #131f37;
-		background-color: #131f37;
 	}
 }
-.footer__social {
-	display: inline-block;
-	background: #131f37;
-	background-color: #131f37;
-	text-align: center;
-	& > tbody > tr > th {
-		padding-bottom: 50px;
+.header__main {
+	.verizon-logo {
+		width: 150px;
 	}
-	a {
+	.shop {
+		width: 63px;
 		display: inline-block;
-		padding-left: 10px;
-		padding-right: 10px;
 	}
-}
-.rating {
-	background: #131f37;
-	background-color: #131f37;
-	display: inline-block;
-	.riot {
+	.support {
+		width: 86px;
 		display: inline-block;
-		padding-right: 10px;
-		padding-top: 30px;
 	}
-	.esrb {
+	.my-verizon {
+		width: 106px;
 		display: inline-block;
-		width: 120px;
-		padding-left: 10px;
-	}
-}
-.unsubscribe {
-	background: #131f37;
-	background-color: #131f37;
-	p {
-		color: #ffffff;
-		text-align: center;
-		font-size: 12px;
-		padding-top: 60px;
-		padding-bottom: 60px;
 	}
 }
