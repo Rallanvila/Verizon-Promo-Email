@@ -7,6 +7,8 @@ html,
 body {
 	padding-bottom: 300px;
 }
+
+//HEADER===========
 .header__smallp {
 	& > tbody > tr > th {
 		padding-left: 0 !important;
@@ -48,5 +50,54 @@ body {
 	& > tbody > tr > th {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
+	}
+}
+//INDEX==============
+.main-offer {
+	& > tbody > tr > th {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+.main-offer__details {
+	// & > tbody > tr > th {
+	// 	padding-left: 0 !important;
+	// 	padding-right: 0 !important;
+	// }
+	.main-offer__details--description {
+		h1 {
+			font-size: 104px;
+			font-weight: 700;
+			letter-spacing: -5.4px;
+		}
+		h2 {
+			font-size: 32px;
+			font-weight: 700;
+			letter-spacing: -1.25px;
+		}
+		p {
+			font-size: 16px;
+			letter-spacing: -0.1px;
+		}
+		a {
+			display: inline-block;
+			color: #000000;
+			font-weight: 700;
+			letter-spacing: -0.1px;
+			height: 20px;
+			text-align: right;
+			padding-bottom: 30px;
+			padding-left: 165px;
+		}
+		img {
+			display: inline-block;
+			height: 10px;
+			padding-top: 5px !important;
+		}
+	}
+	.main-offer__details-image {
+		img {
+			width: 244px;
+		}
 	}
 }
