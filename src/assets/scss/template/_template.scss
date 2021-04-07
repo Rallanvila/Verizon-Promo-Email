@@ -60,6 +60,7 @@ body {
 	}
 }
 .main-offer__details {
+	border: 2px solid #d3d5d5;
 	// & > tbody > tr > th {
 	// 	padding-left: 0 !important;
 	// 	padding-right: 0 !important;
@@ -69,6 +70,8 @@ body {
 			font-size: 104px;
 			font-weight: 700;
 			letter-spacing: -5.4px;
+			line-height: 101px;
+			padding-top: 20px;
 		}
 		h2 {
 			font-size: 32px;
@@ -98,6 +101,8 @@ body {
 	.main-offer__details-image {
 		img {
 			width: 244px;
+			margin-right: 0 !important;
+			padding-top: 155px;
 		}
 	}
 }
