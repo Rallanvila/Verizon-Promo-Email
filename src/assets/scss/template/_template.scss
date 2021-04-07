@@ -8,6 +8,10 @@ body {
 	padding-bottom: 300px;
 }
 .header__smallp {
+	& > tbody > tr > th {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 	background: #f6f6f6;
 	background-color: #f6f6f6;
 	p {
@@ -20,6 +24,10 @@ body {
 	}
 }
 .header__main {
+	& > tbody > tr > th {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 	.verizon-logo {
 		width: 150px;
 	}
@@ -34,5 +42,11 @@ body {
 	.my-verizon {
 		width: 106px;
 		display: inline-block;
+	}
+}
+.open-stores {
+	& > tbody > tr > th {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
 	}
 }
