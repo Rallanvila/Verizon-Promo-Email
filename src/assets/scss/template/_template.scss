@@ -157,3 +157,30 @@ p {
 		}
 	}
 }
+.shop-your-way {
+	border-right: 2px solid #d3d5d5;
+	border-bottom: 2px solid #d3d5d5;
+	border-left: 2px solid #d3d5d5;
+	.shop-your-way__left {
+		h2 {
+			padding-top: 20px;
+			padding-bottom: 70px;
+		}
+	}
+	p {
+		padding-top: 20px;
+		padding-bottom: 70px;
+	}
+	a {
+		text-decoration: underline;
+		color: #000000;
+	}
+}
+.verizon-v {
+	border-right: 2px solid #d3d5d5;
+	border-bottom: 2px solid #d3d5d5;
+	border-left: 2px solid #d3d5d5;
+	img {
+		width: 358px;
+	}
+}
