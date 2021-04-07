@@ -122,14 +122,23 @@ p {
 		}
 	}
 }
+.offers {
+	& > tbody > tr > th {
+		padding-bottom: 0 !important;
+	}
+}
 .offer-2,
 .offer-3 {
 	border-right: 2px solid #d3d5d5;
 	border-bottom: 2px solid #d3d5d5;
 	border-left: 2px solid #d3d5d5;
+	padding-bottom: 0;
 
 	h2 {
 		padding-top: 20px;
+	}
+	.offer-2__img {
+		padding-top: 25px;
 	}
 	img {
 		width: 127px;
