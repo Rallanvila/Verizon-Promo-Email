@@ -57,21 +57,63 @@ body {
 	}
 }
 //FOOTER=============
-.footer__img {
+.footer__top {
 	background: #131f37;
 	background-color: #131f37;
 	& > tbody > tr > th {
 		padding-right: 0 !important;
 		padding-left: 0 !important;
 	}
-}
-.footer__social {
-	background: #131f37;
-	background-color: #131f37;
+	a {
+		text-align: center;
+	}
 	p {
 		font-size: 12px;
+		text-align: center;
+		padding-bottom: 20px;
+		margin-bottom: 0;
 		color: #ffffff;
 		background: #131f37;
 		background-color: #131f37;
+	}
+}
+.footer__social {
+	display: inline-block;
+	background: #131f37;
+	background-color: #131f37;
+	text-align: center;
+	& > tbody > tr > th {
+		padding-bottom: 50px;
+	}
+	a {
+		display: inline-block;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+.rating {
+	background: #131f37;
+	background-color: #131f37;
+	display: inline-block;
+	.riot {
+		display: inline-block;
+		padding-right: 10px;
+		padding-top: 30px;
+	}
+	.esrb {
+		display: inline-block;
+		width: 120px;
+		padding-left: 10px;
+	}
+}
+.unsubscribe {
+	background: #131f37;
+	background-color: #131f37;
+	p {
+		color: #ffffff;
+		text-align: center;
+		font-size: 12px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 }
