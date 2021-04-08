@@ -2,12 +2,6 @@
 	padding-right: 0 !important;
 	padding-left: 0 !important;
 }
-
-html,
-body {
-	padding-bottom: 300px;
-}
-
 h1 {
 	font-size: 104px;
 	font-weight: 700;
@@ -23,7 +17,6 @@ p {
 	font-size: 16px;
 	letter-spacing: -0.1px;
 }
-
 //HEADER===========
 .header__smallp {
 	& > tbody > tr > th {
@@ -182,5 +175,36 @@ p {
 	border-left: 2px solid #d3d5d5;
 	img {
 		width: 358px;
+	}
+}
+//FOOTER
+.footer__social {
+	padding-left: 5px !important;
+	padding-right: 0 !important;
+	display: inline-block;
+	a {
+		display: inline-block;
+	}
+	img {
+		display: inline-block;
+		width: 40px;
+		padding-top: 20px;
+	}
+}
+.footer__links {
+	a {
+		color: #000000;
+		font-size: 14px;
+		font-weight: 700;
+		padding-right: 10px;
+		display: inline-block;
+	}
+}
+.footer__terms-and-conditions {
+	padding-top: 50px;
+	p {
+		font-size: 12px;
+		color: #747676;
+		padding-bottom: 40px;
 	}
 }
