@@ -27,7 +27,7 @@ Project is created with:
 
 ## See the email below!
 
-[Link to HTML Newsletter Email](https://github.com/Rallanvila/Verizon-Promo-Email)
+[Link to HTML Newsletter Email](https://rallanvila.com/project_pages/verizon.html)
 
 ## Build Commands
 
